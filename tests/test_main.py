@@ -10,6 +10,9 @@ def test_health():
 def test_add():
     assert client.get("/add", params={"a": 2, "b": 3}).json() == {"result": 5}
 
+def test_subtract():
+    assert client.get("/subtract", params={"a": 2, "b": 3}).json() == {"result": -1}
+
 def test_version():
     assert client.get("/version").json() == {"version": "0.1.0"}
 
