@@ -19,3 +19,11 @@ def test_version():
 def test_multiply():
     assert client.get("/multiply", params={"a": 3, "b": 4}).json() == {"result": 12}
 
+def test_add_rejects_large_numbers():
+    response = client.get("/add", params={"a": 1_000_001, "b": 1})
+    assert response.status_code == 422
+
+
+def test_add_accepts_limit():
+    response = client.get("/add", params={"a": 1_000_000, "b": 1})
+    assert response.json() == {"result": 1_000_001}
