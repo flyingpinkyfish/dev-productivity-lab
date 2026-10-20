@@ -12,3 +12,7 @@ def test_add():
 
 def test_version():
     assert client.get("/version").json() == {"version": "0.1.0"}
+
+def test_multiply():
+    assert client.get("/multiply", params={"a": 3, "b": 4}).json() == {"result": 12}
+
