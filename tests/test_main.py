@@ -30,3 +30,11 @@ def test_add_accepts_limit():
 
 def test_root():
     assert client.get("/").json() == {"message": "dev-productivity-lab"}
+
+def test_divide():
+    assert client.get("/divide", params={"a": 10, "b": 4}).json() == {"result": 2.5}
+
+def test_divide_by_zero():
+    response = client.get("/divide", params={"a": 1, "b": 0})
+    assert response.status_code == 400
+    assert response.json() == {"detail": "Cannot divide by zero"}

@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Query
+from fastapi import FastAPI, HTTPException, Query
 
 app = FastAPI()
 VERSION = "0.1.0"
@@ -26,3 +26,9 @@ def root():
 @app.get("/version")
 def version():
     return {"version": VERSION}
+
+@app.get("/divide")
+def divide(a: int, b:int):
+    if b == 0:
+        raise HTTPException(status_code=400, detail="Cannot divide by zero")
+    return {"result": a / b}    
