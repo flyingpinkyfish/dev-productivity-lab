@@ -27,3 +27,6 @@ def test_add_rejects_large_numbers():
 def test_add_accepts_limit():
     response = client.get("/add", params={"a": 1_000_000, "b": 1})
     assert response.json() == {"result": 1_000_001}
+
+def test_root():
+    assert client.get("/").json() == {"message": "dev-productivity-lab"}
