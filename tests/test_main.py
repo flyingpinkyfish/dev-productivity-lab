@@ -1,3 +1,5 @@
+import logging
+
 from fastapi.testclient import TestClient
 
 from app.main import app
@@ -41,3 +43,8 @@ def test_divide_by_zero():
 
 def test_echo():
     assert client.get("/echo", params={"text": "hello world"}).json() == {"text": "hello world"}
+
+def test_request_logging(caplog):
+    with caplog.at_level(logging.INFO, logger="uvicorn.error"):
+        client.get("/health")
+    assert "GET /health -> 200" in caplog.text
