@@ -38,3 +38,6 @@ def test_divide_by_zero():
     response = client.get("/divide", params={"a": 1, "b": 0})
     assert response.status_code == 400
     assert response.json() == {"detail": "Cannot divide by zero"}
+
+def test_echo():
+    assert client.get("/echo", params={"text": "hello world"}).json() == {"text": "hello world"}

@@ -32,3 +32,7 @@ def divide(a: int, b:int):
     if b == 0:
         raise HTTPException(status_code=400, detail="Cannot divide by zero")
     return {"result": a / b}    
+
+@app.get("/echo")
+def echo(text: str):
+    return {"text": text}
