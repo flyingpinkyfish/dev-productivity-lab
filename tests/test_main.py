@@ -6,6 +6,11 @@ from app.main import app
 
 client = TestClient(app)
 
+def test_concatenate():
+    response = client.get("/concatenate", params={"a": "foo", "b": "bar"})
+    assert response.status_code == 200
+    assert response.json() == {"result": "foobar"}
+
 def test_health():
     assert client.get("/health").json() == {"status": "ok"}
 

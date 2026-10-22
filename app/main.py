@@ -47,3 +47,7 @@ def divide(a: int, b:int):
 @app.get("/echo")
 def echo(text: str):
     return {"text": text}
+
+@app.get("/concatenate")
+def concatenate(a:str, b:str):
+    return {"result": a+b}
