@@ -20,6 +20,10 @@ VERSION = "0.1.0"
 def square_number(n: int = Query(..., description="The number to square")):
     return {"result": n ** 2}
 
+@app.get("/cube")
+def cube_number(n: int = Query(..., description="The number to cube")):
+    return {"result": n * n * n}
+
 @app.get("/vowels")
 def count_vowels(text: str = Query(..., description="The text to count vowels from")):
     vowels = "aeiouAEIOU"
