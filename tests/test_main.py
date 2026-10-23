@@ -6,6 +6,16 @@ from app.main import app
 
 client = TestClient(app)
 
+def test_first_char():
+    response = client.get("/first_char", params={"text": "Hello"})
+    assert response.status_code == 200
+    assert response.json() == {"result": "H"}
+
+
+def test_first_char_empty():
+    response = client.get("/first_char", params={"text": ""})
+    assert response.status_code == 400
+    assert response.json() == {"detail": "Text must not be empty"}
 
 def test_cube_number_success():
     response = client.get("/cube?n=3")
