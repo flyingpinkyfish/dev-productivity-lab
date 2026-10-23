@@ -6,6 +6,18 @@ from app.main import app
 
 client = TestClient(app)
 
+def test_count_vowels():
+    # Test with a standard string
+    response = client.get("/vowels?text=hello")
+    assert response.status_code == 200
+    assert response.json() == {"result": 2}
+
+def test_count_vowels_uppercase():
+    # Test to ensure it counts uppercase vowels
+    response = client.get("/vowels?text=FastAPI")
+    assert response.status_code == 200
+    assert response.json() == {"result": 3}
+
 def test_concatenate():
     response = client.get("/concatenate", params={"a": "foo", "b": "bar"})
     assert response.status_code == 200
