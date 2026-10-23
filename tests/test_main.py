@@ -6,6 +6,25 @@ from app.main import app
 
 client = TestClient(app)
 
+
+def test_cube_number_success():
+    response = client.get("/cube?n=3")
+    assert response.status_code == 200
+    assert response.json() == {"result": 27}
+
+def test_cube_number_negative():
+    response = client.get("/cube?n=-2")
+    assert response.status_code == 200
+    assert response.json() == {"result": -8}
+
+def test_cube_number_missing_param():
+    response = client.get("/cube")
+    assert response.status_code == 422  # FastAPI validation error
+
+def test_cube_number_invalid_type():
+    response = client.get("/cube?n=abc")
+    assert response.status_code == 422  # FastAPI validation error
+
 def test_square_number():
     # Test with a positive integer
     response = client.get("/square?n=5")
