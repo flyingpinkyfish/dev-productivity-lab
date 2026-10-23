@@ -6,6 +6,19 @@ from app.main import app
 
 client = TestClient(app)
 
+def test_square_number():
+    # Test with a positive integer
+    response = client.get("/square?n=5")
+    assert response.status_code == 200
+    assert response.json() == {"result": 25}
+
+def test_square_negative_number():
+    # Test with a negative integer
+    response = client.get("/square?n=-4")
+    assert response.status_code == 200
+    assert response.json() == {"result": 16}
+
+
 def test_count_vowels():
     # Test with a standard string
     response = client.get("/vowels?text=hello")
