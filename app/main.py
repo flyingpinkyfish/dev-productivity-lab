@@ -14,6 +14,13 @@ async def log_requests(request: Request, call_next):
 
 VERSION = "0.1.0"
 
+@app.get("/vowels")
+def count_vowels(text: str = Query(..., description="The text to count vowels from")):
+    vowels = "aeiouAEIOU"
+    vowel_count = sum(1 for char in text if char in vowels)
+    
+    return {"result": vowel_count}
+
 @app.get("/health")
 def health():
     return {"status": "ok"}
