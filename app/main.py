@@ -5,7 +5,9 @@ from fastapi import FastAPI, HTTPException, Query, Request
 app = FastAPI()
 logger = logging.getLogger("uvicorn.error")
 
-
+@app.get("/upper")
+def upper(text: str):
+    return {"result": text.upper()}
 
 @app.middleware("http")
 async def log_requests(request: Request, call_next):

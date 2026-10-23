@@ -6,6 +6,17 @@ from app.main import app
 
 client = TestClient(app)
 
+def test_upper():
+    response = client.get("/upper", params={"text": "Hello"})
+    assert response.status_code == 200
+    assert response.json() == {"result": "HELLO"}
+
+
+def test_upper_already_capitals():
+    response = client.get("/upper", params={"text": "ABC 123!"})
+    assert response.status_code == 200
+    assert response.json() == {"result": "ABC 123!"}
+
 def test_first_char():
     response = client.get("/first_char", params={"text": "Hello"})
     assert response.status_code == 200
