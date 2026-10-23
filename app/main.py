@@ -6,6 +6,7 @@ app = FastAPI()
 logger = logging.getLogger("uvicorn.error")
 
 
+
 @app.middleware("http")
 async def log_requests(request: Request, call_next):
     response = await call_next(request)
@@ -13,6 +14,11 @@ async def log_requests(request: Request, call_next):
     return response
 
 VERSION = "0.1.0"
+
+
+@app.get("/square")
+def square_number(n: int = Query(..., description="The number to square")):
+    return {"result": n ** 2}
 
 @app.get("/vowels")
 def count_vowels(text: str = Query(..., description="The text to count vowels from")):
