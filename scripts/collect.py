@@ -105,11 +105,27 @@ def probe():
         "seconds": round(time.monotonic() - started, 2),
     }
 
+def collect_issues():
+    rows = []
+    for issue in pages("issues?state=all"):
+        if "pull_request" in issue:
+            continue
+        rows.append(
+            {
+                "number": issue["number"],
+                "title": issue["title"],
+                "labels": [label["name"] for label in issue["labels"]],
+                "created_at": issue["created_at"],
+                "closed_at": issue["closed_at"],
+            }
+        )
+    return rows
 
 def main():
     OUT.mkdir(exist_ok=True)
     (OUT / "prs.json").write_text(json.dumps(collect_prs(), indent=2))
     (OUT / "runs.json").write_text(json.dumps(collect_runs(), indent=2))
+    (OUT / "issues.json").write_text(json.dumps(collect_issues(), indent=2))
     result = probe()
     if result:
         (OUT / "probe.json").write_text(json.dumps(result))

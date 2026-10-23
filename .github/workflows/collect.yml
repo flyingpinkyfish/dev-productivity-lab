@@ -9,6 +9,7 @@ permissions:
   contents: write
   pull-requests: read
   actions: read
+  issues: read
 
 jobs:
   collect:
@@ -35,7 +36,7 @@ jobs:
             git rm -rf . > /dev/null
           fi
           mkdir -p data
-          cp data_out/prs.json data_out/runs.json data/
+          cp data_out/prs.json data_out/runs.json data_out/issues.json data/
           if [ -f data_out/probe.json ]; then
             cat data_out/probe.json >> data/probes.jsonl
             echo >> data/probes.jsonl
