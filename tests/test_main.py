@@ -6,6 +6,15 @@ from app.main import app
 
 client = TestClient(app)
 
+def test_min():
+    response = client.get("/min", params={"a": 3, "b": 7})
+    assert response.status_code == 200
+    assert response.json() == {"result": 3}
+
+
+def test_min_negative_and_equal():
+    assert client.get("/min", params={"a": -5, "b": 2}).json() == {"result": -5}
+    assert client.get("/min", params={"a": 4, "b": 4}).json() == {"result": 4}
 def test_upper():
     response = client.get("/upper", params={"text": "Hello"})
     assert response.status_code == 200
