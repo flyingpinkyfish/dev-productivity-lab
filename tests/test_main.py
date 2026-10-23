@@ -1,10 +1,14 @@
 import logging
+import random
 
 from fastapi.testclient import TestClient
 
 from app.main import app
 
 client = TestClient(app)
+
+def test_flaky_example():
+    assert random.random() > .25, "Flaky failure: this test fails about 1 in 4"
 
 def test_min():
     response = client.get("/min", params={"a": 3, "b": 7})
