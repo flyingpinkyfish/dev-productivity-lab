@@ -11,10 +11,10 @@ def test_min():
     assert response.status_code == 200
     assert response.json() == {"result": 3}
 
-
 def test_min_negative_and_equal():
     assert client.get("/min", params={"a": -5, "b": 2}).json() == {"result": -5}
     assert client.get("/min", params={"a": 4, "b": 4}).json() == {"result": 4}
+
 def test_upper():
     response = client.get("/upper", params={"text": "Hello"})
     assert response.status_code == 200
@@ -85,8 +85,11 @@ def test_concatenate():
     assert response.status_code == 200
     assert response.json() == {"result": "foobar"}
 
-def test_health():
-    assert client.get("/health").json() == {"status": "ok"}
+def test_health(monkeypatch):
+    monkeypatch.setenv("APP_MODE", "test")
+    response = client.get("/health")
+    assert response.status_code == 200
+    assert response.json() == {"status": "ok", "mode": "test"}
 
 def test_add():
     assert client.get("/add", params={"a": 2, "b": 3}).json() == {"result": 5}
@@ -123,7 +126,8 @@ def test_divide_by_zero():
 def test_echo():
     assert client.get("/echo", params={"text": "hello world"}).json() == {"text": "hello world"}
 
-def test_request_logging(caplog):
+def test_request_logging(caplog, monkeypatch):
+    monkeypatch.setenv("APP_MODE", "test")
     with caplog.at_level(logging.INFO, logger="uvicorn.error"):
         client.get("/health")
     assert "GET /health -> 200" in caplog.text
