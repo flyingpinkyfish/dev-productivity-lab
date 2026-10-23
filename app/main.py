@@ -25,6 +25,10 @@ def first_char(text: str):
 def square_number(n: int = Query(..., description="The number to square")):
     return {"result": n ** 2}
 
+@app.get("/abs")
+def absolute_value(n: int = Query(..., description="The number to get the absolute value of")):
+    return {"result": abs(n)}
+
 @app.get("/cube")
 def cube_number(n: int = Query(..., description="The number to cube")):
     return {"result": n * n * n}

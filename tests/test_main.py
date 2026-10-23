@@ -6,6 +6,31 @@ from app.main import app
 
 client = TestClient(app)
 
+lient = TestClient(app)
+
+def test_abs_positive():
+    response = client.get("/abs?n=5")
+    assert response.status_code == 200
+    assert response.json() == {"result": 5}
+
+def test_abs_negative():
+    response = client.get("/abs?n=-10")
+    assert response.status_code == 200
+    assert response.json() == {"result": 10}
+
+def test_abs_zero():
+    response = client.get("/abs?n=0")
+    assert response.status_code == 200
+    assert response.json() == {"result": 0}
+
+def test_abs_missing_param():
+    response = client.get("/abs")
+    assert response.status_code == 422  # FastAPI validation error
+
+def test_abs_invalid_param():
+    response = client.get("/abs?n=abc")
+    assert response.status_code == 422  # FastAPI validation error
+
 def test_first_char():
     response = client.get("/first_char", params={"text": "Hello"})
     assert response.status_code == 200
