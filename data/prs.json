@@ -1,5 +1,52 @@
 [
   {
+    "number": 38,
+    "title": "Collect issues in the data branch",
+    "labels": [],
+    "created_at": "2026-10-23T18:58:14Z",
+    "first_commit_at": "2026-10-23T18:57:56Z",
+    "merged_at": "2026-10-23T18:58:27Z",
+    "closed_at": "2026-10-23T18:58:27Z",
+    "commits": 1,
+    "additions": 18,
+    "deletions": 1,
+    "changed_files": 2,
+    "reviews": 0,
+    "merge_commit_sha": "33e0044cb991e50a466d5ba658b480e5c9002d4d"
+  },
+  {
+    "number": 37,
+    "title": "Revert \"added monkeypatch and setenv line to test_request_logging\"",
+    "labels": [
+      "ai:none"
+    ],
+    "created_at": "2026-10-23T18:25:39Z",
+    "first_commit_at": "2026-10-23T18:25:25Z",
+    "merged_at": "2026-10-23T18:37:14Z",
+    "closed_at": "2026-10-23T18:37:14Z",
+    "commits": 1,
+    "additions": 5,
+    "deletions": 10,
+    "changed_files": 2,
+    "reviews": 0,
+    "merge_commit_sha": "61c8f2c8594ac17f9694daf3fca45d211e23dc4e"
+  },
+  {
+    "number": 35,
+    "title": "added monkeypatch and setenv line to test_request_logging",
+    "labels": [],
+    "created_at": "2026-10-23T18:15:20Z",
+    "first_commit_at": "2026-10-23T18:09:42Z",
+    "merged_at": "2026-10-23T18:15:30Z",
+    "closed_at": "2026-10-23T18:15:31Z",
+    "commits": 1,
+    "additions": 10,
+    "deletions": 5,
+    "changed_files": 2,
+    "reviews": 0,
+    "merge_commit_sha": "d9364a23b7892abf2a8c5d9585d2cbecde1987a4"
+  },
+  {
     "number": 33,
     "title": "Add scheduled data collection",
     "labels": [
