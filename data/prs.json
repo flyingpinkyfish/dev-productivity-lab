@@ -1,0 +1,356 @@
+[
+  {
+    "number": 33,
+    "title": "Add scheduled data collection",
+    "labels": [
+      "ai:heavy"
+    ],
+    "created_at": "2026-10-23T17:21:13Z",
+    "first_commit_at": "2026-10-23T17:20:23Z",
+    "merged_at": "2026-10-23T17:22:05Z",
+    "closed_at": "2026-10-23T17:22:05Z",
+    "commits": 1,
+    "additions": 164,
+    "deletions": 0,
+    "changed_files": 2,
+    "reviews": 0,
+    "merge_commit_sha": "9815d04358a2f87e45fc9b01415052d81663d752"
+  },
+  {
+    "number": 31,
+    "title": "add get min",
+    "labels": [
+      "ai:moderate"
+    ],
+    "created_at": "2026-10-23T04:10:07Z",
+    "first_commit_at": "2026-10-23T04:09:15Z",
+    "merged_at": "2026-10-23T04:10:19Z",
+    "closed_at": "2026-10-23T04:10:19Z",
+    "commits": 1,
+    "additions": 13,
+    "deletions": 0,
+    "changed_files": 2,
+    "reviews": 0,
+    "merge_commit_sha": "59b346c93ea01fdf73d3772edd661a17c9b9ee4e"
+  },
+  {
+    "number": 30,
+    "title": "Add /upper endpoint",
+    "labels": [
+      "ai:heavy"
+    ],
+    "created_at": "2026-10-23T04:04:09Z",
+    "first_commit_at": "2026-10-23T04:03:54Z",
+    "merged_at": "2026-10-23T04:04:21Z",
+    "closed_at": "2026-10-23T04:04:21Z",
+    "commits": 1,
+    "additions": 14,
+    "deletions": 1,
+    "changed_files": 2,
+    "reviews": 0,
+    "merge_commit_sha": "2437b8dc00a7d8192fadb6ffec7b6964afd2bfa3"
+  },
+  {
+    "number": 29,
+    "title": "add abs val",
+    "labels": [
+      "ai:none"
+    ],
+    "created_at": "2026-10-23T04:00:38Z",
+    "first_commit_at": "2026-10-23T03:59:58Z",
+    "merged_at": null,
+    "closed_at": "2026-10-23T04:00:55Z",
+    "commits": 1,
+    "additions": 29,
+    "deletions": 0,
+    "changed_files": 2,
+    "reviews": 0,
+    "merge_commit_sha": "d957503b549ae21a9000c9397f9040c0e6004c98"
+  },
+  {
+    "number": 28,
+    "title": "Add /first_char endpoint",
+    "labels": [],
+    "created_at": "2026-10-23T03:50:20Z",
+    "first_commit_at": "2026-10-23T03:49:40Z",
+    "merged_at": "2026-10-23T03:50:28Z",
+    "closed_at": "2026-10-23T03:50:28Z",
+    "commits": 1,
+    "additions": 15,
+    "deletions": 0,
+    "changed_files": 2,
+    "reviews": 0,
+    "merge_commit_sha": "9c9ead50d0f03bd8bed1ad56c891a422ae09dec4"
+  },
+  {
+    "number": 26,
+    "title": "add task-cubed",
+    "labels": [
+      "ai:none"
+    ],
+    "created_at": "2026-10-23T03:45:27Z",
+    "first_commit_at": "2026-10-23T03:43:35Z",
+    "merged_at": "2026-10-23T03:45:35Z",
+    "closed_at": "2026-10-23T03:45:35Z",
+    "commits": 1,
+    "additions": 23,
+    "deletions": 0,
+    "changed_files": 2,
+    "reviews": 0,
+    "merge_commit_sha": "4d048cc2ec88eca87970ba7a6a1b9dfd917c3a7b"
+  },
+  {
+    "number": 25,
+    "title": "add square",
+    "labels": [
+      "ai:none"
+    ],
+    "created_at": "2026-10-23T03:14:16Z",
+    "first_commit_at": "2026-10-23T03:13:32Z",
+    "merged_at": "2026-10-23T03:14:32Z",
+    "closed_at": "2026-10-23T03:14:32Z",
+    "commits": 1,
+    "additions": 19,
+    "deletions": 0,
+    "changed_files": 2,
+    "reviews": 0,
+    "merge_commit_sha": "0cb272de0b6168329b14daf68eabee5efb11406a"
+  },
+  {
+    "number": 24,
+    "title": "add count vowels",
+    "labels": [
+      "ai:moderate"
+    ],
+    "created_at": "2026-10-23T03:07:55Z",
+    "first_commit_at": "2026-10-23T03:06:03Z",
+    "merged_at": "2026-10-23T03:08:23Z",
+    "closed_at": "2026-10-23T03:08:23Z",
+    "commits": 1,
+    "additions": 19,
+    "deletions": 0,
+    "changed_files": 2,
+    "reviews": 0,
+    "merge_commit_sha": "be15c82848c94effe86acb13df95e3ef7299684e"
+  },
+  {
+    "number": 22,
+    "title": "add concatenate endpoint",
+    "labels": [
+      "ai:moderate"
+    ],
+    "created_at": "2026-10-22T21:50:23Z",
+    "first_commit_at": "2026-10-22T21:49:05Z",
+    "merged_at": "2026-10-22T21:50:35Z",
+    "closed_at": "2026-10-22T21:50:35Z",
+    "commits": 1,
+    "additions": 9,
+    "deletions": 0,
+    "changed_files": 2,
+    "reviews": 0,
+    "merge_commit_sha": "cc2883b07d7d6e23a3429b49df5d19be7b5c00e7"
+  },
+  {
+    "number": 20,
+    "title": "Add experiment runner",
+    "labels": [
+      "accessibility",
+      "ai:heavy"
+    ],
+    "created_at": "2026-10-22T21:37:01Z",
+    "first_commit_at": "2026-10-22T21:36:36Z",
+    "merged_at": "2026-10-22T21:37:35Z",
+    "closed_at": "2026-10-22T21:37:35Z",
+    "commits": 1,
+    "additions": 110,
+    "deletions": 0,
+    "changed_files": 2,
+    "reviews": 0,
+    "merge_commit_sha": "c8c7cb201f0f919931240e63194b2bf9ca6e075b"
+  },
+  {
+    "number": 18,
+    "title": "Log each request",
+    "labels": [
+      "ai:heavy"
+    ],
+    "created_at": "2026-10-22T21:30:44Z",
+    "first_commit_at": "2026-10-22T21:29:41Z",
+    "merged_at": "2026-10-22T21:31:23Z",
+    "closed_at": "2026-10-22T21:31:23Z",
+    "commits": 1,
+    "additions": 19,
+    "deletions": 1,
+    "changed_files": 2,
+    "reviews": 0,
+    "merge_commit_sha": "4832561e21c323a9c577eac3b1e8f4541b4d810e"
+  },
+  {
+    "number": 17,
+    "title": "Add /echo endpoint",
+    "labels": [
+      "ai:moderate"
+    ],
+    "created_at": "2026-10-22T20:50:35Z",
+    "first_commit_at": "2026-10-22T20:50:06Z",
+    "merged_at": "2026-10-22T20:50:51Z",
+    "closed_at": "2026-10-22T20:50:51Z",
+    "commits": 1,
+    "additions": 7,
+    "deletions": 0,
+    "changed_files": 2,
+    "reviews": 0,
+    "merge_commit_sha": "7e4a363b97dcae4af2d920519b98f118b5547856"
+  },
+  {
+    "number": 15,
+    "title": "add ruff config",
+    "labels": [
+      "ai:moderate"
+    ],
+    "created_at": "2026-10-22T20:45:17Z",
+    "first_commit_at": "2026-10-22T20:44:35Z",
+    "merged_at": "2026-10-22T20:45:46Z",
+    "closed_at": "2026-10-22T20:45:46Z",
+    "commits": 1,
+    "additions": 4,
+    "deletions": 0,
+    "changed_files": 1,
+    "reviews": 0,
+    "merge_commit_sha": "d7bc188bc23b696fb3fa73fb0d45c4a160366e4d"
+  },
+  {
+    "number": 14,
+    "title": "Add /divide endpoint w divide-by-zero error",
+    "labels": [
+      "ai:moderate"
+    ],
+    "created_at": "2026-10-22T20:42:09Z",
+    "first_commit_at": "2026-10-22T20:39:57Z",
+    "merged_at": "2026-10-22T20:42:53Z",
+    "closed_at": "2026-10-22T20:42:53Z",
+    "commits": 1,
+    "additions": 15,
+    "deletions": 1,
+    "changed_files": 2,
+    "reviews": 0,
+    "merge_commit_sha": "44423048f64a165efbecb241ea0c4a391ca73d4f"
+  },
+  {
+    "number": 12,
+    "title": "Add test for root route",
+    "labels": [
+      "ai:moderate"
+    ],
+    "created_at": "2026-10-22T20:29:04Z",
+    "first_commit_at": "2026-10-22T20:25:26Z",
+    "merged_at": "2026-10-22T20:29:46Z",
+    "closed_at": "2026-10-22T20:29:46Z",
+    "commits": 1,
+    "additions": 3,
+    "deletions": 0,
+    "changed_files": 1,
+    "reviews": 0,
+    "merge_commit_sha": "112e5d0a80a5ca8cbbaf37b9eed09d59af776111"
+  },
+  {
+    "number": 11,
+    "title": "Reject /add inputs over 1,000,000",
+    "labels": [
+      "ai:moderate"
+    ],
+    "created_at": "2026-10-20T20:08:47Z",
+    "first_commit_at": "2026-10-20T20:08:23Z",
+    "merged_at": "2026-10-20T20:09:38Z",
+    "closed_at": "2026-10-20T20:09:38Z",
+    "commits": 1,
+    "additions": 10,
+    "deletions": 2,
+    "changed_files": 2,
+    "reviews": 0,
+    "merge_commit_sha": "3674391f9ac72a8edf663f0c965913896348d45b"
+  },
+  {
+    "number": 9,
+    "title": "Add /subtract endpoint",
+    "labels": [
+      "ai:moderate"
+    ],
+    "created_at": "2026-10-20T19:39:40Z",
+    "first_commit_at": "2026-10-20T19:38:06Z",
+    "merged_at": "2026-10-20T19:43:36Z",
+    "closed_at": "2026-10-20T19:43:36Z",
+    "commits": 1,
+    "additions": 7,
+    "deletions": 0,
+    "changed_files": 2,
+    "reviews": 0,
+    "merge_commit_sha": "2788f5c12d88ea56debf8df10e66a4f040ec0752"
+  },
+  {
+    "number": 7,
+    "title": "documents readme in README",
+    "labels": [
+      "ai:moderate"
+    ],
+    "created_at": "2026-10-20T19:30:03Z",
+    "first_commit_at": "2026-10-20T19:24:24Z",
+    "merged_at": "2026-10-20T19:30:37Z",
+    "closed_at": "2026-10-20T19:30:37Z",
+    "commits": 1,
+    "additions": 18,
+    "deletions": 0,
+    "changed_files": 1,
+    "reviews": 0,
+    "merge_commit_sha": "8f131958e246bd99ad6b6f0e5389dd846aa4cc89"
+  },
+  {
+    "number": 5,
+    "title": "Add /multiply endpoint",
+    "labels": [
+      "ai:heavy"
+    ],
+    "created_at": "2026-10-20T19:05:13Z",
+    "first_commit_at": "2026-10-20T19:00:20Z",
+    "merged_at": "2026-10-20T19:16:10Z",
+    "closed_at": "2026-10-20T19:16:10Z",
+    "commits": 1,
+    "additions": 8,
+    "deletions": 0,
+    "changed_files": 2,
+    "reviews": 0,
+    "merge_commit_sha": "abf9b053093cc6258e0301939cb2b66fa4e6d039"
+  },
+  {
+    "number": 3,
+    "title": "Add /version endpoint",
+    "labels": [],
+    "created_at": "2026-10-19T23:15:57Z",
+    "first_commit_at": "2026-10-19T23:12:07Z",
+    "merged_at": "2026-10-20T18:29:56Z",
+    "closed_at": "2026-10-20T18:29:56Z",
+    "commits": 1,
+    "additions": 8,
+    "deletions": 0,
+    "changed_files": 2,
+    "reviews": 0,
+    "merge_commit_sha": "443651136d3b7a243fd8aa50d2cd73eed77fcabe"
+  },
+  {
+    "number": 1,
+    "title": "Add root route",
+    "labels": [
+      "ai:none"
+    ],
+    "created_at": "2026-10-19T18:57:13Z",
+    "first_commit_at": "2026-10-19T18:04:27Z",
+    "merged_at": "2026-10-19T19:00:28Z",
+    "closed_at": "2026-10-19T19:00:28Z",
+    "commits": 1,
+    "additions": 4,
+    "deletions": 0,
+    "changed_files": 1,
+    "reviews": 0,
+    "merge_commit_sha": "35777f3b7c2367c4ad5d69c3b622b0ebad10706f"
+  }
+]
