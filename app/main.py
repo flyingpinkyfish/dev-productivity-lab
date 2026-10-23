@@ -9,6 +9,10 @@ logger = logging.getLogger("uvicorn.error")
 def upper(text: str):
     return {"result": text.upper()}
 
+@app.get("/min")
+def minimum(a: int, b: int):
+    return {"result": min(a, b)}
+
 @app.middleware("http")
 async def log_requests(request: Request, call_next):
     response = await call_next(request)
