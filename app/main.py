@@ -15,6 +15,11 @@ async def log_requests(request: Request, call_next):
 
 VERSION = "0.1.0"
 
+@app.get("/first_char")
+def first_char(text: str):
+    if text == "":
+        raise HTTPException(status_code=400, detail="Text must not be empty")
+    return {"result": text[0]}
 
 @app.get("/square")
 def square_number(n: int = Query(..., description="The number to square")):
