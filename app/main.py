@@ -1,5 +1,4 @@
 import logging
-import os
 
 from fastapi import FastAPI, HTTPException, Query, Request
 
@@ -45,7 +44,7 @@ def count_vowels(text: str = Query(..., description="The text to count vowels fr
 
 @app.get("/health")
 def health():
-    return {"status": "ok", "mode": os.environ["APP_MODE"]}
+    return {"status": "ok"}
 
 @app.get("/add")
 def add(a: int = Query(..., le=1_000_000), b: int = Query(..., le=1_000_000)):
