@@ -1,15 +1,27 @@
 [
   {
-    "id": 45369305714,
+    "id": 45500763335,
     "name": "Collect data",
     "event": "schedule",
     "branch": "main",
     "sha": "33e0044cb991e50a466d5ba658b480e5c9002d4d",
     "status": "in_progress",
     "conclusion": null,
+    "created_at": "2026-11-24T22:25:15Z",
+    "run_started_at": "2026-11-24T22:25:15Z",
+    "updated_at": "2026-11-24T22:25:19Z"
+  },
+  {
+    "id": 45369305714,
+    "name": "Collect data",
+    "event": "schedule",
+    "branch": "main",
+    "sha": "33e0044cb991e50a466d5ba658b480e5c9002d4d",
+    "status": "completed",
+    "conclusion": "success",
     "created_at": "2026-11-24T09:52:25Z",
     "run_started_at": "2026-11-24T09:52:25Z",
-    "updated_at": "2026-11-24T09:52:28Z"
+    "updated_at": "2026-11-24T09:53:42Z"
   },
   {
     "id": 45292482037,
